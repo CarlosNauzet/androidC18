@@ -14,3 +14,11 @@ header {
   align-items: center;
   padding: 20px;
 }
+
+.logo img {
+  width: 100px;
+}
+
+ul > li {
+  display: inline;
+}
