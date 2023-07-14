@@ -1,0 +1,17 @@
+/* footer v.1 
+.social-networks {
+  background-color: aquamarine;
+}
+
+.social-networks li {
+  display: center;
+}
+*/
+
+footer {
+  display: inlinex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: aquamarine;
+}

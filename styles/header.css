@@ -4,7 +4,7 @@
   grid-template-rows: 1fr;
 }
 
-#nav-bar-items {
+.nav-bar-items {
   display: flex;
 }
 
