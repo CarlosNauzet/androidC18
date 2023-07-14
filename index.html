@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
 
     <title>Android C18</title>
   </head>
   <body>
-    <section>
+    <section class="padding">
       <header>
         <h3>Android C18</h3>
       </header>
@@ -23,62 +27,65 @@
       </main>
     </section>
 
-    <section id="skills">
-      <header>My skills</header>
+    <section id="skills" class="padding">
+      <header>
+        <h3>My skills</h3>
+      </header>
       <main>
+        <!-- <label for="barra">HP</label>
+        <div class="barra">
+          <span id="HP"></span>
+        </div> -->
         <div>
-          <label for="HP">HP</label>
-          <progress id="HP" value="0"></progress>
-        </div>
-        <div>
-          <label for="Strenght">Strenght</label>
+          <label class="block" for="Strenght">Strenght</label>
           <progress id="Strenght" value="40" max="100">32%</progress>
         </div>
         <div>
-          <label for="Vital Energy">Vital Energy</label>
+          <label class="block" for="Vital Energy">Vital Energy</label>
           <progress id="Vital Energy" value="70" max="100">32%</progress>
         </div>
         <div>
-          <label for="Defense">Defense</label>
+          <label class="block" for="Defense">Defense</label>
           <progress id="Defense" value="25" max="100">32%</progress>
         </div>
         <div>
-          <label for="Spirit">Spirit</label>
+          <label class="block" for="Spirit">Spirit</label>
           <progress id="Spirit" value="62" max="100">32%</progress>
         </div>
         <div>
-          <label for="Speed">Speed</label>
+          <label class="block" for="Speed">Speed</label>
           <progress id="Speed" value="80" max="100">32%</progress>
         </div>
       </main>
     </section>
-    <figure>
+
+    <figure id="c18">
       <img src="assets/c18.jpg" alt="" />
-      <figcaption>Fig 1</figcaption>
     </figure>
-    <section>
+
+    <section class="padding">
       <form action="">
         <div>
-          <label for="nombre"></label>
+          <label class="block" for="nombre">Nombre</label>
           <input type="text" name="nombre" />
         </div>
 
         <div>
-          <label for="apellido"></label>
+          <label class="block" for="apellido">Apellido</label>
           <input type="text" name="apellido" />
         </div>
 
         <div>
-          <label for="telefono"></label>
+          <label class="block" for="telefono">Teléfono</label>
           <input type="text" name="telefono" />
         </div>
         <div>
-          <label for="github_username"></label>
+          <label class="block" for="github_username">Github username</label>
           <input type="text" name="github_username" />
         </div>
 
-        <div>
-          <h6>Have we met?</h6>
+        <div id="meet">
+          <h3>Have we met?</h3>
           <div>
             <label for="c1">Classic Drangon Ball Saga</label>
             <input type="radio" name="opciones" id="c1" />
@@ -97,8 +104,8 @@
           </div>
         </div>
 
-        <div>
-          <h6>More info</h6>
+        <div id="info">
+          <h3>More info</h3>
           <textarea
             name=""
             id=""
@@ -108,9 +115,9 @@
           ></textarea>
         </div>
 
-        <div>
-          <label for="newsletter">Get me on the newsletter</label>
+        <div id="newsletter">
           <input type="checkbox" name="newsletter" id="newsletter" />
+          <label for="newsletter">Get me on the newsletter</label>
         </div>
         <div>
           <button type="submit">Send</button>

@@ -1,21 +1,79 @@
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+#c18 {
+  width: 100%;
+  margin: 0;
+}
+
+#c18 img {
+  width: 100%;
+  object-fit: contain;
+}
+
 #skills > main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.barra {
+  height: 20px;
+  position: relative;
+  background: rgb(53, 52, 52);
+  border-radius: 25px;
+  padding: 10px;
+  border: 2px;
 }
 
 #HP {
-  animation: animacion-barra 5s infinite;
+  animation: animacion-barra 2s linear;
+  background-color: blue;
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 50%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: fit-content 1fr 1fr;
+  grid-template-rows: fit-content repeat(6, 1fr);
+}
+
+form > div {
+  padding-bottom: 1rem;
+}
+
+#meet {
+  grid-column: 1 / span 2;
+}
+
+#info {
+  grid-column: 1 / span 2;
+}
+
+#newsletter {
+  grid-column: 1 / span 2;
+}
+
+.block {
+  display: block;
+  font-weight: bold;
+}
+
+.padding {
+  padding: 1rem 4rem;
 }
 
 @keyframes animacion-barra {
   0% {
-    transform: scaleX(0);
-  }
-  50% {
-    transform: scaleX(0.5);
+    width: 0%;
   }
   100% {
-    transform: scaleX(1);
+    width: 32%;
   }
 }
