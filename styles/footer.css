@@ -1,17 +1,8 @@
-/* footer v.1 
-.social-networks {
-  background-color: aquamarine;
-}
-
-.social-networks li {
-  display: center;
-}
-*/
-
-footer {
-  display: inlinex;
+footer > div.social-buttons > ul {
+  display: flex;
   justify-content: center;
-  align-items: center;
+  column-gap: 3em;
   height: 100px;
   background-color: aquamarine;
+  align-items: center;
 }
