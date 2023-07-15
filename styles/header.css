@@ -1,50 +1,50 @@
-.header-grid > div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+.nav-bar > header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-bar {
+  width: 100%;
 }
 
 .nav-bar-items {
   display: flex;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+  list-style: none;
+  gap: 10px;
 }
 
 .logo img {
   width: 20em;
 }
 
-ul > li {
-  display: inline;
-}
-
-.li-navbar {
+.navbar-item {
   padding: 20px;
-  text-decoration: none;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
-
-nav ul li a {
   text-decoration: none;
   color: #000;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
-nav ul li a:hover {
+.navbar-item:hover {
   background-color: #000;
   color: #fff;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .nav-bar {
   border-bottom: 3px solid grey;
+}
+
+@media screen and (768px >= width) {
+  ul > li > a.navbar-item {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
 }
