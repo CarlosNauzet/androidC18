@@ -3,7 +3,7 @@ footer > div.social-buttons > ul {
   justify-content: center;
   column-gap: 3em;
   height: 100px;
-  background-color: aquamarine;
+  background-color: var(--main-brand-color);
   align-items: center;
   list-style-type: none;
 }

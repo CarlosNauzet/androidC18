@@ -1,4 +1,6 @@
 :root {
-  --main-brand-color: #32a9cc;
-  --main-brand-color-light: #5abedc;
+  --main-brand-color: #7ccce5;
+  --main-brand-color-dark: #1886a7;
+  --main-background-color: #fff;
+  --font-color-buttons: #fff;
 }

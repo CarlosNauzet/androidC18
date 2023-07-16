@@ -118,3 +118,26 @@ form > div > input[type="text"] {
 .overlay-button:hover {
   background-color: var(--main-brand-color-light);
 }
+
+/*CSS contact form buttons */
+
+.form-button-submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-brand-color);
+  color: var(--font-color-buttons);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button-reset {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-color: 10px var(--main-brand-color);
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
