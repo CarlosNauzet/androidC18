@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+footer > div.social-buttons > ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 3em;
+  height: 100px;
+  background-color: aquamarine;
+  align-items: center;
+}
+
+iframe {
+  width: 100%;
+  height: 30em;
+}
+
+#projects,
+#video {
+  padding: 2em;
+}
+
+#projects > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  list-style-type: none;
+}
+figure {
+  margin: 0;
+}
+
+@media screen and (768px >=width) {
+  #projects > div {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #projects,
+  #video {
+    padding: 0.5em;
+  }
+  #projects img {
+    width: 10em;
+  }
+  iframe {
+    height: 40em;
+  }
+}

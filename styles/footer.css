@@ -1,0 +1,9 @@
+footer > div.social-buttons > ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 3em;
+  height: 100px;
+  background-color: aquamarine;
+  align-items: center;
+  list-style-type: none;
+}
