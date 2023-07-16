@@ -11,4 +11,5 @@ Created by Carlos Hernández Sánchez
 ## Credits
 
 Added a "normalize.css" file for browser compatibilities.
-There is a selection of code based of /_! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css _/
+There is a selection of code based of
+/_! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css _/
