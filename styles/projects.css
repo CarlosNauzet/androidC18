@@ -11,6 +11,11 @@ footer > div.social-buttons > ul {
   align-items: center;
 }
 
+iframe {
+  width: 100%;
+  height: 30em;
+}
+
 #projects,
 #video {
   padding: 2em;
