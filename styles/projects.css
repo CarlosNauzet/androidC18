@@ -43,4 +43,7 @@ figure {
   #projects img {
     width: 10em;
   }
+  iframe {
+    height: 40em;
+  }
 }
