@@ -7,9 +7,9 @@ footer > div.social-buttons > ul {
   align-items: center;
 }
 
-#skills > main {
+#projects > ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   gap: 1rem;
+  list-style-type: none;
 }
