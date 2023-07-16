@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"/>
 
@@ -80,25 +81,25 @@
     </figure>
     </div>
     <section class="padding">
-      <form action="">
+      <form action="" method="post">
         <div>
           <label class="block" for="name">Name</label>
           <input type="text" placeholder="Add your name" name="name"
-          value="Android" />
+          value="Android" required />
         </div>
 
         <div>
           <label class="block" for="surname">Surname</label>
-          <input type="text" placeholder="Add your surname" name="surname" value="C-18" />
+          <input type="text" placeholder="Add your surname" name="surname" value="C-18" required />
         </div>
 
         <div>
           <label class="block" for="phone number">Phone number</label>
-          <input type="text" placeholder="Add your phone number" name="phone number" value="673 02 14 56" />
+          <input type="text" placeholder="Add your phone number" name="phone number" value="673 02 14 56" required />
         </div>
         <div>
           <label class="block" for="github_username">Github username</label>
-          <input type="text" placeholder="Add your Github username" name="github_username" value="youremailuser@test.com" />
+          <input type="text" placeholder="Add your Github username" name="github_username" value="youremailuser@test.com" required />
         </div>
 
         <div id="meet">
