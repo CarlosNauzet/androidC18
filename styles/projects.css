@@ -5,5 +5,11 @@ footer > div.social-buttons > ul {
   height: 100px;
   background-color: aquamarine;
   align-items: center;
-  list-style-type: none;
+}
+
+#skills > main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
 }

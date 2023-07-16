@@ -14,8 +14,12 @@
   gap: 10px;
 }
 
+.logo {
+  margin: auto 0;
+}
+
 .logo img {
-  width: 20em;
+  width: 10em;
 }
 
 .navbar-item {
@@ -39,12 +43,16 @@
   border-bottom: 3px solid grey;
 }
 
-@media screen and (768px >= width) {
-  ul > li > a.navbar-item {
+@media screen and (768px >=width) {
+  .navbar-item {
     display: none;
   }
 
   .mobile-menu {
     display: block;
+  }
+
+  .logo img {
+    width: 5em;
   }
 }

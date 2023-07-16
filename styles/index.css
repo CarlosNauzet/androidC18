@@ -1,6 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto";
   font-size: 16px;
+  margin: 0;
+  background: #fff;
 }
 
 #c18 {
@@ -17,35 +23,25 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 3rem;
 }
 
-.barra {
-  height: 20px;
-  position: relative;
-  background: rgb(53, 52, 52);
-  border-radius: 25px;
-  padding: 10px;
-  border: 2px;
-}
-
-#HP {
-  animation: animacion-barra 2s linear;
-  background-color: blue;
-  display: block;
-  position: relative;
-  width: 200px;
-  height: 50%;
+progress {
+  width: 100%;
 }
 
 form {
   display: grid;
   grid-template-columns: fit-content 1fr 1fr;
   grid-template-rows: fit-content repeat(6, 1fr);
+  gap: 1em;
 }
 
 form > div {
   padding-bottom: 1rem;
+}
+form > div > input[type="text"] {
+  width: 100%;
 }
 
 #meet {
@@ -55,7 +51,9 @@ form > div {
 #info {
   grid-column: 1 / span 2;
 }
-
+#info > textarea {
+  width: 100%;
+}
 #newsletter {
   grid-column: 1 / span 2;
 }
@@ -66,14 +64,33 @@ form > div {
 }
 
 .padding {
-  padding: 1rem 4rem;
+  padding: 1rem 10rem;
 }
 
-@keyframes animacion-barra {
-  0% {
-    width: 0%;
+@media screen and (768px >=width) {
+  #skills > main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
-  100% {
-    width: 32%;
+
+  .padding {
+    padding: 1rem 2rem;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  #meet {
+    grid-column: 1;
+  }
+
+  #info {
+    grid-column: 1;
+  }
+
+  #newsletter {
+    grid-column: 1;
   }
 }
