@@ -99,7 +99,9 @@
         </div>
         <div>
           <label class="block" for="github_username">Github username</label>
-          <input type="text" placeholder="Add your Github username" name="github_username" value="youremailuser@test.com" required />
+          <input type="text" placeholder="Add your Github username" 
+          name="github_username" value="youremailuser@test.com" 
+          required pattern="^@[^\s]+" />
         </div>
 
         <div id="meet">
@@ -147,12 +149,38 @@
     <footer>
       <div class="social-buttons">
         <ul>
-          <li><img src="assets/icon-youtube-48.png" alt="youtube icon"></li>
-          <li><img src="assets/icon-instagram-48.png" alt="instagram icon"></li>
-          <li><img src="assets/icon-twitter-48.png" alt="twitter icon"></li>
+          <li>
+            <a href="https://twitter.com/" target="_blank">
+            <img src="assets/icon-twitter-48.png" alt="Twitter icon"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+            <img src="assets/icon-instagram-48.png" alt="instagram icon"></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/" target="_blank">
+            <img src="assets/icon-youtube-48.png" alt="youtube icon"></a>
+          </li>
         </ul>
       </div>
     </footer>
+
+  <!--
+
+       <footer>
+      <div class="social-buttons">
+    <a href="https://twitter.com/" target="_blank">
+      <img src="twitter.png" alt="Twitter">
+    </a>
+    <a href="https://www.youtube.com/" target="_blank">
+      <img src="youtube.png" alt="YouTube">
+    </a>
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="instagram.png" alt="Instagram">
+    </a>
+  </div>
+</footer>
+    -->
 
   </body>
 </html>
