@@ -19,22 +19,8 @@ body {
   object-fit: contain;
 }
 
-#skills > main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 3rem;
-}
-
 progress {
   width: 100%;
-}
-
-form {
-  display: grid;
-  grid-template-columns: fit-content 1fr 1fr;
-  grid-template-rows: fit-content repeat(6, 1fr);
-  gap: 1em;
 }
 
 form > div {
@@ -64,40 +50,52 @@ form > div > input[type="text"] {
 }
 
 .padding {
-  padding: 1rem 10rem;
+  padding: 4rem;
 }
 
-@media screen and (768px >=width) {
-  #skills > main {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .padding {
-    padding: 1rem 2rem;
-  }
+#skills > main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+#skills > main div {
+  width: 100%;
+}
+
+.c18-desktop {
+  display: none;
+}
+
+@media (width >768px) {
   form {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: grid;
+    grid-template-columns: fit-content 1fr 1fr;
+    grid-template-rows: fit-content repeat(6, 1fr);
+    gap: 1em;
   }
 
-  #meet {
-    grid-column: 1;
+  .c18-mobile {
+    display: none;
   }
 
-  #info {
-    grid-column: 1;
+  .c18-desktop {
+    display: block;
   }
 
-  #newsletter {
-    grid-column: 1;
+  #skills > main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3rem;
   }
-}
-
-.container-img {
-  position: relative;
-  display: inline-block;
 }
 
 .overlay-button {
@@ -140,4 +138,48 @@ form > div > input[type="text"] {
   background-color: white;
   color: black;
   cursor: pointer;
+}
+
+/* Nuevo CSS*/
+
+progress {
+  width: 100%;
+  height: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f0f0f0;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4caf50;
+}
+
+progress::-moz-progress-bar {
+  background-color: #4caf50;
+}
+
+progress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  animation: fillAnimation 2s ease forwards;
+}
+
+@keyframes fillAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }

@@ -22,28 +22,12 @@ iframe {
 }
 
 #projects > div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 figure {
   margin: 0;
-}
-
-@media screen and (768px >=width) {
-  #projects > div {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #projects,
-  #video {
-    padding: 0.5em;
-  }
-  #projects img {
-    width: 10em;
-  }
-  iframe {
-    height: 40em;
-  }
 }
